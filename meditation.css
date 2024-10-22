@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00796b;
+    padding: 1rem;
+}
+
+header .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+
+.meditation-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.meditation-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    color: #4a7c59;
+}
+
+.meditation-description {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+
+.meditation-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.audio-player {
+    width: 55%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.player-controls {
+    text-align: center;
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.track-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.track-details {
+    text-align: left;
+}
+
+.track-details h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.controls button {
+    font-size: 24px;
+    margin: 0 15px;
+    padding: 10px;
+    background-color: #4a7c59;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #69a074;
+}
+
+.track-progress input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Song Queue Section */
+.song-queue {
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.song-queue h2 {
+    font-size: 28px;
+    color: #4a7c59;
+    margin-bottom: 20px;
+}
+
+.song-queue ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.song-queue li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.song-queue li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Session List */
+.session-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.session-list h2 {
+    font-size: 28px;
+    color: #4a7c59;
+    margin-bottom: 20px;
+}
+
+.session-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.session-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Schedule a Session */
+.schedule-session {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-session h2 {
+    font-size: 28px;
+    color: #4a7c59;
+    margin-bottom: 20px;
+}
+
+.schedule-session form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule-session label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.schedule-session input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.schedule-session button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4a7c59;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.schedule-session button:hover {
+    background-color: #69a074;
+}
+
+/* Meditation Playlists */
+.meditation-playlists {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.meditation-playlists h2 {
+    font-size: 28px;
+    color: #4a7c59;
+    margin-bottom: 20px;
+}
+
+.meditation-playlists ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.meditation-playlists li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.meditation-playlists li a {
+    text-decoration: none;
+    color: #4a7c59;
+}
+
+.meditation-playlists li:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #004a41;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    color: #ffdd57;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column ul li p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    background-color: #00332d;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .meditation-content {
+        flex-direction: column;
+    }
+
+    .audio-player, .song-queue {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #00796b;
+        width: 100%;
+        z-index: 1000;
+        text-align: right;
+        padding: 1rem;
+        align-items: flex-end;
+        padding-right: 20px;
+    }
+
+    header nav ul li {
+        margin: 1rem 0;
+    }
+
+    header .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    
+    header nav ul.show {
+        display: flex;
+    }
+}
+
+
+.hamburger {
+    display: none; 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1001;
+}
+
+.hero {
+    margin-top: 60px;
+}
+
+
+
+

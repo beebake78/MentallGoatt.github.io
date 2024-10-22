@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image\Mental Goat.jpg" alt="MentalGoat logo" style="height: 40px; margin-right: 10px;"> Mental-Goat</div>
+        <div class="hamburger">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="meditation.html">Meditation</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blog-content">
+        <section class="main-blog">
+        <a href="https://www.helpguide.org/mental-health/stress/benefits-of-mindfulness">
+            <div class="big-blog-image">
+                <img src="image\Benefits-of-Mindfulness.jpeg" alt="Blog Main Image">
+                <div class="blog-text-overlay">
+                    <h2>Explore the Benefits of Mindfulness</h2>
+                </div>
+            </div>
+        </a>
+        </section>
+
+        <section class="blog-articles">
+            <article>
+            <a href="https://www.mindful.org/take-a-mindful-moment-5-simple-practices-for-daily-life/">
+                <img src="image\MindfulMoment-1024x640.jpg" alt="Article 1 Image">
+                <h3>Mindfulness in Daily Life</h3>
+            
+            </article>
+            </a>
+        
+            <article>
+            <a href="https://www.mayoclinic.org/tests-procedures/meditation/in-depth/meditation/art-20045858">
+                <img src="image\meditation.jpg" alt="Article 2 Image">
+                <h3>Reducing Stress with Meditation</h3>
+            </article>
+            </a>
+            <article>
+            <a href="https://www.bcmhsus.ca/about-us/news-features/10-tips-boost-your-mental-health">
+                <img src="image\10_tips_website.png.jpg" alt="Article 3 Image">
+                <h3>Simple Tips for Mental Health</h3>
+            </article>
+            </a>
+        </section>
+    </main>
+    <section class="comments">
+        <h2>Leave a Comment</h2>
+        <form id="blogCommentForm">
+            <textarea id="blogCommentText" placeholder="Write your comment here..." required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+        <div id="blogCommentList">
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="our team.html">Meet Our Team</a></li>
+                    <li><a href="our story.html">Our Story</a></li>
+                    <li><a href="https://www.nimh.nih.gov/about/advisory-boards-and-groups/namhc">Advisory Council</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://dohs.gov.np/">Kathmandu Health</a></li>
+                    <li><a href="meditation.html">Meditation</a></li>
+                    <li><a href="https://www.who.int/teams/mental-health-and-substance-use/about-us/newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><p>Gairidhara Sadak Ste 1800<br>Gairidhara KTM 90071</p></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.pinterest.com" target="_blank"><img src="image\Pinterest-logo.png" alt="Pinterest"></a>
+                    <a href="https://www.instagram.com"target="_blank"><img src="image\Instagram_icon.png.webp" alt="Instagram"></a>
+                    <a href="https://www.facebook.com"target="_blank"><img src="image\download.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com"target="_blank"><img src="image\free-youtube-logo-icon-2431-thumb.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2024 Mental Goat. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.termsfeed.com/blog/sample-terms-of-use-template/#:~:text=Legally%20speaking%2C%20a%20Terms%20of,Terms%20and%20Conditions">Terms of Use</a>
+                <a href="https://supercell.com/en/privacy-policy/">Privacy Policy</a>
+                <a href="https://commission.europa.eu/cookies-policy_en">Cookies Policy</a>
+                <a href="https://legal.hubspot.com/affiliate-program-agreement">Affiliate Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="blog.js"></script>
+</body>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show'); 
+    });
+</script>
+</html>

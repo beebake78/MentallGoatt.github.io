@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Status Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">
+            <img src="image\Mental Goat.jpg" alt="MentalGoat logo" style="height: 40px; margin-right: 10px;"> Mental-Goat</div>
+        <div class="hamburger">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="meditation.html">Meditation</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="quiz-intro">
+        <h1>Mental Health Status Quiz</h1>
+        <p>This quiz helps assess your mental well-being. Please answer all the questions honestly for the best results.</p>
+        <button id="start-quiz-btn">Start Quiz</button>
+    </section>
+
+    <!-- Quiz Questions -->
+    <section class="quiz-questions" id="quiz-questions" style="display:none;">
+        <form id="quiz-form">
+            
+            
+            <div class="question">
+                <h3>1. How often do you feel overwhelmed?</h3>
+                <label><input type="radio" name="q1" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q1" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q1" value="3"> Often</label><br>
+                <label><input type="radio" name="q1" value="4"> Very Often</label>
+            </div>
+
+            
+            <div class="question">
+                <h3>2. How frequently do you have trouble sleeping or staying asleep?</h3>
+                <label><input type="radio" name="q2" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q2" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q2" value="3"> Often</label><br>
+                <label><input type="radio" name="q2" value="4"> Very Often</label>
+            </div>
+
+            
+            <div class="question">
+                <h3>3. How often do you feel nervous or anxious for no apparent reason?</h3>
+                <label><input type="radio" name="q3" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q3" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q3" value="3"> Often</label><br>
+                <label><input type="radio" name="q3" value="4"> Very Often</label>
+            </div>
+
+            
+            <div class="question">
+                <h3>4. How often do you struggle to find motivation to do daily tasks?</h3>
+                <label><input type="radio" name="q4" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q4" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q4" value="3"> Often</label><br>
+                <label><input type="radio" name="q4" value="4"> Very Often</label>
+            </div>
+
+            
+            <div class="question">
+                <h3>5. How frequently do you experience mood swings?</h3>
+                <label><input type="radio" name="q5" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q5" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q5" value="3"> Often</label><br>
+                <label><input type="radio" name="q5" value="4"> Very Often</label>
+            </div>
+
+            
+            <div class="question">
+                <h3>6. How often do you feel that you are unable to control your thoughts?</h3>
+                <label><input type="radio" name="q6" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q6" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q6" value="3"> Often</label><br>
+                <label><input type="radio" name="q6" value="4"> Very Often</label>
+            </div>
+
+            
+            <div class="question">
+                <h3>7. How often do you feel irritable or easily frustrated?</h3>
+                <label><input type="radio" name="q7" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q7" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q7" value="3"> Often</label><br>
+                <label><input type="radio" name="q7" value="4"> Very Often</label>
+            </div>
+
+            
+            <div class="question">
+                <h3>8. How often do you feel lonely or isolated?</h3>
+                <label><input type="radio" name="q8" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q8" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q8" value="3"> Often</label><br>
+                <label><input type="radio" name="q8" value="4"> Very Often</label>
+            </div>
+
+            
+            <div class="question">
+                <h3>9. How often do you find it difficult to focus or concentrate?</h3>
+                <label><input type="radio" name="q9" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q9" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q9" value="3"> Often</label><br>
+                <label><input type="radio" name="q9" value="4"> Very Often</label>
+            </div>
+
+            
+            <div class="question">
+                <h3>10. How often do you feel hopeless or that things won’t get better?</h3>
+                <label><input type="radio" name="q10" value="1"> Rarely</label><br>
+                <label><input type="radio" name="q10" value="2"> Sometimes</label><br>
+                <label><input type="radio" name="q10" value="3"> Often</label><br>
+                <label><input type="radio" name="q10" value="4"> Very Often</label>
+            </div>
+
+            
+            <button type="submit" id="submit-quiz">Submit Quiz</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="our team.html">Meet Our Team</a></li>
+                    <li><a href="our story.html">Our Story</a></li>
+                    <li><a href="https://www.nimh.nih.gov/about/advisory-boards-and-groups/namhc">Advisory Council</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://dohs.gov.np/">Kathmandu Health</a></li>
+                    <li><a href="meditation.html">Meditation</a></li>
+                    <li><a href="https://www.who.int/teams/mental-health-and-substance-use/about-us/newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><p>Gairidhara Sadak Ste 1800<br>Gairidhara KTM 90071</p></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.pinterest.com" target="_blank"><img src="image\Pinterest-logo.png" alt="Pinterest"></a>
+                    <a href="https://www.instagram.com"target="_blank"><img src="image\Instagram_icon.png.webp" alt="Instagram"></a>
+                    <a href="https://www.facebook.com"target="_blank"><img src="image\download.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com"target="_blank"><img src="image\free-youtube-logo-icon-2431-thumb.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2024 Mental Goat. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.termsfeed.com/blog/sample-terms-of-use-template/#:~:text=Legally%20speaking%2C%20a%20Terms%20of,Terms%20and%20Conditions">Terms of Use</a>
+                <a href="https://supercell.com/en/privacy-policy/">Privacy Policy</a>
+                <a href="https://commission.europa.eu/cookies-policy_en">Cookies Policy</a>
+                <a href="https://legal.hubspot.com/affiliate-program-agreement">Affiliate Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="quiz.js"></script>
+</body>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show'); 
+    });
+</script>
+</html>

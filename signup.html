@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image\Mental Goat.jpg" alt="MentalGoat logo" style="height: 40px; margin-right: 10px;"> Mental-Goat</div>
+        <div class="hamburger">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="meditation.html">Meditation</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="signup-container">
+    <h2>Signup</h2>
+        <form id="signup-form" class="signup-form">
+            <input type="text" id="name" placeholder="First Name" required>
+            <input type="text" id="name" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+            <button type="submit">Signup</button>
+        </form> 
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="our team.html">Meet Our Team</a></li>
+                    <li><a href="our story.html">Our Story</a></li>
+                    <li><a href="https://www.nimh.nih.gov/about/advisory-boards-and-groups/namhc">Advisory Council</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://dohs.gov.np/">Kathmandu Health</a></li>
+                    <li><a href="meditation.html">Meditation</a></li>
+                    <li><a href="https://www.who.int/teams/mental-health-and-substance-use/about-us/newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><p>Gairidhara Sadak Ste 1800<br>Gairidhara KTM 90071</p></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#"><img src="image\Pinterest-logo.png" alt="Pinterest"></a>
+                    <a href="#"><img src="image\Instagram_icon.png.webp" alt="Instagram"></a>
+                    <a href="#"><img src="image\download.png" alt="Facebook"></a>
+                    <a href="#"><img src="image\free-youtube-logo-icon-2431-thumb.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2024 Mental Goat. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.pinterest.com" target="_blank"><img src="image\Pinterest-logo.png" alt="Pinterest"></a>
+                <a href="https://www.instagram.com"target="_blank"><img src="image\Instagram_icon.png.webp" alt="Instagram"></a>
+                <a href="https://www.facebook.com"target="_blank"><img src="image\download.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com"target="_blank"><img src="image\free-youtube-logo-icon-2431-thumb.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="signup.js"></script>
+</body>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show'); 
+    });
+</script>
+</html>
